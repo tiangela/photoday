@@ -55,6 +55,7 @@
 
 @media @mobile-full-widths {
   .teaser {
+    z-index: 2;
       &--320 {
       display: none;
     }
@@ -66,8 +67,24 @@
     height: 220px;
     background-image: url("../img/teaser-3.jpg")
   }
+  &--768 {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 249px;
+    width: 160px;
+    height: 220px;
+    background-image: url("../img/teaser-4.jpg")
+  }
     }
   .teaser__img {
     background-image: none;
+  }
+}
+
+@media @tablet-widths  {
+  .teaser {
+    &--480 {
+    }
   }
 }
