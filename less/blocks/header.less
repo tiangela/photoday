@@ -1,12 +1,19 @@
-.header__title {
+.header {
+    .container ();
+}
+  .header__title {
   text-transform: uppercase;
   font-weight: normal;
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 18px;
   &::after {
     content: "";
-    width: 130px;
+    width: 119px;
     height: 2px;
     position: absolute;
-    top: 0;
-    left: 5px;
+    top: 26px;
+    right: 5px;
+    background-color: @black;
   }
 }

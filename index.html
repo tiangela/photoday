@@ -6,7 +6,7 @@
   <title>День в фото</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Playfair+Display&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700|Playfair+Display:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -23,6 +23,7 @@
           <img src="img/full.jpg" alt="Фото дня">
         </picture>
       </figure>
+      <span class="main__full-text">21 сентября</span>
       <div class="main__text-container">
         <p class="main__text main__text--description">Мельницы маленькой деревушки Brandmill близи курортного австрийского города Mayerhoffen.</p>
         <p class="main__text main__text--copyright">Фото: Reuters</p>
@@ -74,13 +75,17 @@
           <img src="img/img-2.jpg" alt="Фото 21 сентября">
         </picture>
       </figure>
+      <div class="main__block main__block--mold">
+      </div>
       <article class="teaser teaser--320">
+        <a href="#" class="teaser__link">
         <div class="teaser__img"></div>
-        <div class="teaser__text-container">
-          <p class="teaser__description">Рекламный тизер</p>
-          <p class="teaser__title">Театральная паутина</p>
+        <div href="#" class="teaser__text-container">
+          <p class="teaser__text teaser__text--description">Рекламный тизер</p>
+          <p class="teaser__text teaser__text--title">Театральная паутина</p>
           <p class="teaser__text">Открытие новых сервисных центров немецкого автопрома </p>
         </div>
+        </a>
       </article>
       <div class="main__block">
         <p class="main__block-text">20 сентября</p>
@@ -175,7 +180,7 @@
         </picture>
       </figure>
       <article class="teaser teaser--768">
-        <div class="teaser__img teaser__img--480"></div>
+        <a class="teaser__img teaser__img--480"></a>
       </article>
       <figure class="main__item main__item--no-320">
         <picture>
@@ -224,10 +229,10 @@
   <footer class="footer">
     <article class="paginator">
       <span class="paginator__title">Страницы:</span>
-      <a class="paginator__number paginator__number--current">1</a>
-      <a class="paginator__number" href="#">2</a>
-      <a class="paginator__number" href="#">3</a>
-      <a class="paginator__number" href="#">4</a>
+      <a class="paginator__text paginator__text--number paginator__text--current">1</a>
+      <a class="paginator__text paginator__text--number" href="#">2</a>
+      <a class="paginator__text paginator__text--number" href="#">3</a>
+      <a class="paginator__text paginator__text--number" href="#">4</a>
       <a class="paginator__text" href="#">Следующая</a>
     </article>
   </footer>
