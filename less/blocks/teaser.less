@@ -11,6 +11,14 @@
 .teaser__img {
   width: 100px;
   height: 80px;
+  background-image: url("../img/teaser-2.jpg");
+  background-repeat: no-repeat;
+  background-position: -5px -50px;
+}
+
+.teaser__img:hover {
+  background-image: url("../img/teaser-01.jpg");
+  background-position: 0 0;
 }
 
 .teaser__link {
@@ -45,13 +53,21 @@
     }
 }
 
-.teaser__img {
-  background-image: url("../img/teaser-2.jpg");
-  background-repeat: no-repeat;
-  background-position: -5px -50px;
-}
-
-.teaser__img:hover {
-  background-image: url("../img/teaser-01.jpg");
-  background-position: 0 0;
+@media @mobile-full-widths {
+  .teaser {
+      &--320 {
+      display: none;
+    }
+  &--480 {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 160px;
+    height: 220px;
+    background-image: url("../img/teaser-3.jpg")
+  }
+    }
+  .teaser__img {
+    background-image: none;
+  }
 }
