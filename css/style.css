@@ -104,6 +104,10 @@
 .main__block--mold {
   width: 49%;
 }
+.main__block--mold::after {
+  width: 0;
+  height: 0;
+}
 .main__block--no-320 {
   display: none;
 }
