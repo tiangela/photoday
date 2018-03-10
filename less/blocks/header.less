@@ -5,23 +5,37 @@
   text-transform: uppercase;
   font-weight: normal;
   position: relative;
-  margin-top: 25px;
-  margin-bottom: 18px;
+  margin-top: 22px;
+  margin-bottom: 21px;
   &::after {
     content: "";
     width: 119px;
     height: 2px;
     position: absolute;
-    top: 26px;
-    right: 5px;
+    top: 17px;
+    right: 0;
     background-color: @black;
   }
 }
 
 @media @mobile-full-widths {
+  .header {
+    padding-top: 40px;
+  }
   .header__title {
+    margin-top: 2px;
+    margin-bottom: 40px;
     &::after {
       width: 157px;
+      top: 25px;
+    }
+  }
+}
+
+@media @tablet-widths {
+  .header__title {
+    &::after {
+      width: 418px;
       top: 25px;
     }
   }
